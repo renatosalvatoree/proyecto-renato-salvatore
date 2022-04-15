@@ -1,8 +1,10 @@
+/* font-family "HelveticaNeueLTStd-MdEx" */
 @font-face {
     font-family: "Helvetica-custom";
     src: url(font/Helvetica.otf)
 }
 
+/* Estilo general del sitio */
 * {
     padding: 0;
     margin: 0;
@@ -25,7 +27,7 @@ header {
     height: 80px;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 32px;
@@ -41,7 +43,6 @@ footer img {
     width: 25px;
     height: 25px;
 }
-
 
 ul {
     font-size: 24px;
@@ -59,6 +60,17 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+.logo {
+    width: 300px;
+}
+
+#subtitle {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 16px;
 }
 
 li:hover {
@@ -81,18 +93,7 @@ li:hover {
     display: none;
 }
 
-.dates {
-    margin-top: 32px;
-}
-
-.fkaTwigsLogo {
-    width: 700px;
-}
-
-.logo {
-    width: 300px;
-}
-
+/* Estilo pagina principal */
 .cover {
     display: block;
     width: 350px;
@@ -142,30 +143,9 @@ li:hover {
     padding-left: 5px;
 }
 
-#subtitle {
-    font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 16px;
-}
-
-.caprimerch {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "ele1 ele2";
-
-
-}
-
-#twigsHead {
-    width: auto;
-    height: 70%;
-    grid-area: ele1;
-    position: fixed;
-    bottom: 60px;
-    left: 120px;
-
-
+/* Estilo pagina caprisongs-tour */
+.dates {
+    margin-top: 32px;
 }
 
 .capritour {
@@ -179,30 +159,8 @@ li:hover {
     width: 80%;
 }
 
-.products {
-    grid-area: ele2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.newsletter {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.form{
-    text-align: center;
-    width: 50%;
-    margin: 0;
-}
-
-.videoNewsletter {
-    width: 50%;
-}
-
+/* Estilo pagina discography */
+/* caprisongs */
 .caprisongs {
     width: 100%;
 }
@@ -217,7 +175,7 @@ li:hover {
 }
 
 .caprisongs div {
-    width: 100px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -232,8 +190,7 @@ li:hover {
     font-size: 50px;
 }
 
-
-
+/* magdalene */
 .magdalene {
     width: 100%;
 }
@@ -266,8 +223,7 @@ li:hover {
     font-size: 50px;
 }
 
-
-
+/* lp1 */
 .lp1 {
     width: 100%;
 }
@@ -299,8 +255,7 @@ li:hover {
     font-size: 50px;
 }
 
-
-
+/* m3ll155x */
 .m3ll155x {
     width: 100%;
 }
@@ -334,7 +289,7 @@ li:hover {
 }
 
 
-
+/* ep2 */
 .ep2 {
     width: 100%;
 }
@@ -366,9 +321,7 @@ li:hover {
     font-size: 50px;
 }
 
-
-
-
+/* ep1 */
 .ep1 {
     width: 100%;
 }
@@ -401,16 +354,65 @@ li:hover {
     font-size: 50px;
 }
 
+/* Estilo pagina caprimerch */
+.caprimerch {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "ele1 ele2";
+}
+
+#twigsHead {
+    width: auto;
+    height: 70%;
+    grid-area: ele1;
+    position: fixed;
+    bottom: 60px;
+    left: 120px;
+}
+
+.fkaTwigsLogo {
+    width: 700px;
+}
+
+.products {
+    grid-area: ele2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Estilo pagina newsletter */
+.newsletter {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    text-align: center;
+    width: 50%;
+    margin: 0;
+}
+
+.videoNewsletter {
+    width: 50%;
+}
+
 @media screen and (max-width: 1024px) {
+/* Estilo pagina principal mobile*/
     form {
         width: 60%;
     }
+
     header {
         height: 100px;
         margin-top: 0px;
     }
 
-    /* Estilo pagina principal */
     .fkaTwigsLogo {
         width: 90%;
     }
@@ -457,13 +459,14 @@ li:hover {
         width: 7%;
 
     }
-
+/* Estilo mobile discograohy */
     .discography {
         width: 100%;
         display: flex;
         flex-direction: column;
     }
 
+    /* caprisongs */
     .caprisongs {
         flex-direction: column;
         justify-content: center;
@@ -477,11 +480,11 @@ li:hover {
 
     .caprisongs a {
 
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .caprisongs h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .caprisongs div {
@@ -489,6 +492,7 @@ li:hover {
         height: 100vw;
     }
 
+    /* magdalene */
     .magdalene {
         flex-direction: column;
         justify-content: center;
@@ -502,11 +506,11 @@ li:hover {
 
     .magdalene a {
 
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .magdalene h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .magdalene div {
@@ -514,6 +518,7 @@ li:hover {
         height: 100vw;
     }
 
+    /* lp1 */
     .lp1 {
         flex-direction: column;
         justify-content: center;
@@ -527,11 +532,11 @@ li:hover {
 
     .lp1 a {
 
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .lp1 h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .lp1 div {
@@ -539,6 +544,7 @@ li:hover {
         height: 100vw;
     }
 
+    /* m3ll155x */
     .m3ll155x {
         flex-direction: column;
         justify-content: center;
@@ -552,11 +558,11 @@ li:hover {
 
     .m3ll155x a {
 
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .m3ll155x h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .m3ll155x div {
@@ -564,6 +570,7 @@ li:hover {
         height: 100vw;
     }
 
+    /* ep2 */
     .ep2 {
         flex-direction: column;
         justify-content: center;
@@ -577,11 +584,11 @@ li:hover {
 
     .ep2 a {
 
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .ep2 h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .ep2 div {
@@ -589,6 +596,7 @@ li:hover {
         height: 100vw;
     }
 
+    /* ep1 */
     .ep1 {
         flex-direction: column;
         justify-content: center;
@@ -602,11 +610,11 @@ li:hover {
 
     .ep1 a {
 
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .ep1 h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .ep1 div {
@@ -614,6 +622,7 @@ li:hover {
         height: 100vw;
     }
 
+    /* Estilo mobile caprimerch */
     .caprimerch {
         width: 100%;
         display: flex;
@@ -639,21 +648,17 @@ li:hover {
         top: 0;
     }
 
+    /* Estilo mobile newsletter */
     .newsletter {
         display: inline-block;
         position: relative;
-        /* text-align: center; */
-        /* flex-direction: column;
-        align-items: center;
-        justify-content: center; */
+        font-size: 25px;
     }
 
     .videoNewsletter {
 
         width: 100%;
         z-index: -5;
-        /* position: fixed;
-        top: 150px; */
     }
 
     .form {
