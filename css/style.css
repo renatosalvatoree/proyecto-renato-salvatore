@@ -20,7 +20,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #C7F0FF;
+    color: inherit;
 }
 
 header {
@@ -190,9 +190,15 @@ li:hover {
     font-size: 50px;
 }
 
+.caprisongs div:hover {
+    background-image: linear-gradient(to bottom, #9c7b6c, #26588d);
+    color: #ffffff;
+}
+
 /* magdalene */
 .magdalene {
     width: 100%;
+
 }
 
 .magdalene {
@@ -215,12 +221,17 @@ li:hover {
 }
 
 .magdalene a {
-    color: #E08155;
+    width: 100%;
     font-size: 20px;
 }
 
 .magdalene h1 {
     font-size: 50px;
+}
+
+.magdalene div:hover {
+    background-image: linear-gradient(to bottom, #c6ae94, #E08155);
+    color: #ffffff;
 }
 
 /* lp1 */
@@ -247,12 +258,16 @@ li:hover {
 }
 
 .lp1 a {
-    color: #AF2E47;
     font-size: 20px;
 }
 
 .lp1 h1 {
     font-size: 50px;
+}
+
+.lp1 div:hover {
+    background-image: linear-gradient(to bottom, #52b9d8, #AF2E47);
+    color: #ffffff;
 }
 
 /* m3ll155x */
@@ -280,7 +295,6 @@ li:hover {
 }
 
 .m3ll155x a {
-    color: #E1CCB9;
     font-size: 20px;
 }
 
@@ -288,6 +302,10 @@ li:hover {
     font-size: 50px;
 }
 
+.m3ll155x div:hover {
+    background-image: linear-gradient(to bottom, #E1CCB9, #232124);
+    color: #ffffff;
+}
 
 /* ep2 */
 .ep2 {
@@ -313,12 +331,16 @@ li:hover {
 }
 
 .ep2 a {
-    color: #FCFBFC;
     font-size: 20px;
 }
 
 .ep2 h1 {
     font-size: 50px;
+}
+
+.ep2 div:hover {
+    background-image: linear-gradient(to bottom, #FCFBFC, #ada79c);
+    color: #ffffff;
 }
 
 /* ep1 */
@@ -346,12 +368,16 @@ li:hover {
 }
 
 .ep1 a {
-    color: #E5E1D6;
     font-size: 20px;
 }
 
 .ep1 h1 {
     font-size: 50px;
+}
+
+.ep1 div:hover {
+    background-image: linear-gradient(to bottom, #f7f6f2, #d3cbbe);
+    color: #ffffff;
 }
 
 /* Estilo pagina caprimerch */
@@ -403,7 +429,8 @@ li:hover {
 }
 
 @media screen and (max-width: 1024px) {
-/* Estilo pagina principal mobile*/
+
+    /* Estilo pagina principal mobile*/
     form {
         width: 60%;
     }
@@ -459,7 +486,8 @@ li:hover {
         width: 7%;
 
     }
-/* Estilo mobile discograohy */
+
+    /* Estilo mobile discograohy */
     .discography {
         width: 100%;
         display: flex;
