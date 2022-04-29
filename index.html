@@ -8,7 +8,8 @@
     <script src="https://kit.fontawesome.com/da92872450.js" crossorigin="anonymous"></script>
     <title>FKA Twigs</title>
     <link rel="icon" type="image/x-icon" href="images/icons/favicon.jpg">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="./js/bootstrap.bundle.js"></script>
 </head>
 
 <body>
@@ -30,25 +31,27 @@
         <img src="./images/discography/caprisongs-cover.jpg" class="cover">
         <img src="./images/icons/caprisongs-logo.png" class="caprisongs-logo">
         <h2 id="subtitle">Out Now</h2>
-        <dvi class="platforms">
-            <div class="spotify">
+        <dvi class="container-md">
+            <div class="row justify-content-md-center">
+            <div class="col-md-auto">
                 <a target="_blank" href="https://open.spotify.com/album/3G77BQuJy3jahjdkKQNNNM">
                     <img src="./images/icons/spotify.svg" width="50" height="50">
                     <p>Save on Spotify</p>
                 </a>
             </div>
-            <div class="apple-music">
+            <div class="col-md-auto">
                 <a target="_blank" href="https://music.apple.com/us/album/caprisongs/1603753230">
                     <img src="./images/icons/apple-music.svg" width="50" height="50">
                     <p>Save on Apple Music</p>
                 </a>
             </div>
-            <div class="deezer">
+            <div class="col-md-auto">
                 <a target="_blank" href="https://www.deezer.com/es/album/286473712">
                     <img src="./images/icons/deezer.png" width="50" height="50">
                     <p>Save on Deezer</p>
                 </a>
             </div>
+        </div>
         </dvi>
         <video autoplay muted loop class="video">
             <source src="./videos/background-video.mp4" type="video/mp4">
