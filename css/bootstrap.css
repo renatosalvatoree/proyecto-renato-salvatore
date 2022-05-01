@@ -4452,13 +4452,13 @@ textarea.form-control-lg {
 }
 
 .navbar-dark .navbar-brand {
-  color: #fff;
+  color: blue;
 }
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-  color: #fff;
+  color: blue;
 }
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.55);
+  color: blue;
 }
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
   color: rgba(255, 255, 255, 0.75);
@@ -4475,7 +4475,7 @@ textarea.form-control-lg {
   border-color: rgba(255, 255, 255, 0.1);
 }
 .navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("../images/icons/menu.png");
 }
 .navbar-dark .navbar-text {
   color: rgba(255, 255, 255, 0.55);
@@ -11290,7 +11290,7 @@ a {
   color: inherit;
 }
 
-header {
+/* header {
   height: 80px;
   width: 100%;
   display: flex;
@@ -11298,7 +11298,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 32px;
-}
+} */
 
 footer {
   width: 100%;
@@ -11311,7 +11311,7 @@ footer img {
   height: 25px;
 }
 
-ul {
+/* ul {
   font-size: 24px;
   display: flex;
   gap: 32px;
@@ -11319,7 +11319,7 @@ ul {
 
 li {
   display: inline-block;
-}
+} */
 
 form {
   width: 100%;
