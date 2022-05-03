@@ -11290,7 +11290,7 @@ a {
   color: inherit;
 }
 
-/* header {
+header {
   height: 80px;
   width: 100%;
   display: flex;
@@ -11298,7 +11298,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 32px;
-} */
+}
 
 footer {
   width: 100%;
@@ -11311,7 +11311,7 @@ footer img {
   height: 25px;
 }
 
-/* ul {
+ul {
   font-size: 24px;
   display: flex;
   gap: 32px;
@@ -11319,7 +11319,7 @@ footer img {
 
 li {
   display: inline-block;
-} */
+}
 
 form {
   width: 100%;
@@ -11327,11 +11327,6 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-
-.logo {
-  width: 300px;
 }
 
 #subtitle {
@@ -11345,16 +11340,20 @@ li:hover {
 }
 
 .header {
-  margin-top: 16px;
-  height: 150px;
+  margin-top: 55px;
+  height: 80px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 32px;
+  margin-bottom: 40px;
 }
 
+.navBarMobile{
+  display: none;
+}
 
 #barIcon {
   display: none;
@@ -11694,7 +11693,10 @@ li:hover {
 .videoNewsletter {
   width: 50%;
 }
-
+.logo img{
+  margin-top: -32px;
+  width: 300px;
+}
 @media screen and (max-width: 1024px) {
 
   /* Estilo pagina principal mobile*/
@@ -11723,16 +11725,29 @@ li:hover {
       justify-content: center;
   }
 
+  .header {
+    margin-top: 40px;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+
   .navBarMobile {
-      width: 100%;
+    display: block;
+      /* width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center;
+      align-items: center; */
   }
 
   .navBar {
-      width: 100%;
+      display: none;
   }
 
   .navBar ul {
@@ -11740,10 +11755,7 @@ li:hover {
   }
 
   .logo {
-      width: 60%;
-      display: inline-block;
-      margin: 0 auto;
-      padding-bottom: 20px;
+      margin-bottom: 32px;
   }
 
   #barIcon {
@@ -11973,4 +11985,12 @@ li:hover {
       background-color: rgba(0, 0, 0, 0.3);
       ;
   }
+
+  button{
+    margin-top: 20px;
+  }
+}
+
+.nav-item:hover{
+  color: black;
 }

@@ -6,11 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caprimerch</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/bootstrap.bundle.js"></script>
 </head>
 
 <body>
     <header class="header">
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top navBarMobile">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header bg-black show">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body bg-black">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="../index.html">Home</a></li>
+                            <li class="nav-item"><a href="./caprisongs-tour.html">CAPRISONGS Tour</a></li>
+                            <li class="nav-item"><a href="./discography.html">Discography</a></li>
+                            <li class="nav-item"><a href="./caprimerch.html">Caprimerch</a></li>
+                            <li class="nav-item"><a href="./newsletter.html">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
         <nav class="navBar">
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -20,9 +47,8 @@
                 <li><a href="./newsletter.html">Newsletter</a></li>
             </ul>
         </nav>
-        <div class="navBarMobile">
-        <img src="../images/icons/menu.png" id="barIcon">
-        <img src="../images/icons/fkatwigs-logo-blue.svg" class="logo">
+        <div class="logo">
+            <img src="../images/icons/fkatwigs-logo-blue.svg">
         </div>
     </header>
     <main>
