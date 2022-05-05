@@ -1,0 +1,56 @@
+/* Estilo pagina caprimerch */
+.caprimerch {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "ele1 ele2";
+}
+
+#twigsHead {
+    width: auto;
+    height: 70%;
+    grid-area: ele1;
+    position: fixed;
+    bottom: 60px;
+    left: 120px;
+}
+
+.fkaTwigsLogo {
+    width: 700px;
+}
+
+.products {
+    grid-area: ele2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+    /* Estilo mobile caprimerch */
+@media screen and (max-width: 1024px) {
+    .caprimerch {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .caprimerch p {
+        font-size: 20px;
+    }
+
+    .caprimerch a {
+        font-size: 20px;
+    }
+
+    #twigsHead {
+        width: 70%;
+        height: auto;
+        position: relative;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+    }
+}
