@@ -1,3 +1,4 @@
+@import "../scss/variables";
 @import "../css/bootstrap.css";
 @import "../scss/caprimerch";
 @import "../scss/caprisongs-tour";
@@ -20,7 +21,7 @@
 body {
     font-family: "Helvetica-custom";
     text-align: center;
-    color: #C7F0FF;
+    color: $main-color;
     background-color: black;
 }
 
@@ -30,7 +31,7 @@ a {
 }
 
 a:hover {
-    color: #C7F0FF;
+    color: $main-color;
 }
 
 header {
@@ -70,7 +71,7 @@ li {
 
 .table {
     width: 90%;
-    color: #C7F0FF;
+    color: $main-color;
 }
 
 form {
@@ -88,7 +89,7 @@ form {
 }
 
 li:hover {
-    text-decoration: underline #C7F0FF;
+    text-decoration: underline $main-color;
 }
 
 .header {
