@@ -24,13 +24,21 @@
     }
 }
 
+input{
+    margin-top: 16px;
+}
+
+.nav-item:hover {
+    color: black;
+}
+
 
 /* Estilo mobile newsletter */
 @media screen and (max-width: 1024px) {
     .newsletter {
         display: inline-block;
         position: relative;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .videoNewsletter {
@@ -60,8 +68,9 @@
     button {
         margin-top: 20px;
     }
+    
+    input{
+        margin-top: 16px;
+    }
 }
 
-.nav-item:hover {
-    color: black;
-}
