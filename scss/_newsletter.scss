@@ -19,7 +19,8 @@
 }
 
 .form {
-    text-align: center;
+    display: block;
+    text-align: left;
     width: 50%;
     margin: 0;
 }
@@ -36,13 +37,43 @@
 }
 
 input{
+    width: 100%;
     margin-top: 16px;
+    background-color: black;
+    border: 3px solid $main-color;
+    color: $main-color;
+}
+
+
+
+.selector{
+    select{
+        background-color: black;
+        color: $main-color;
+        border: 3px solid $main-color;
+        text-align: left;
+        width: 100%;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        display: block;
+        margin: 0 auto;
+    }
+    width: 85%;
+    text-align: left;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .nav-item:hover {
     color: black;
 }
 
+.newsletter-button{
+    color: $main-color;
+    background-color: black;
+    border:$main-color;
+    margin-top: 20px;
+}
 
 /* Estilo mobile newsletter */
 @media screen and (max-width: 1024px) {
@@ -59,22 +90,22 @@ input{
     }
 
     .form {
-
+        form{
+            width: 100%;
+        }
+        .selector{
+            width: 75%;
+        }
         position: absolute;
         top: 0%;
         left: 0%;
         width: 100%;
         height: 100%;
         @include flex-column-center;
-    }
-
-    form {
-        background-color: rgba(0, 0, 0, 0.3);
-        ;
-    }
-
-    button {
-        margin-top: 20px;
+        button{
+            background-color: rgba($color: #000000, $alpha: 0);
+            margin-top: 20px;
+        }
     }
     
     input{
