@@ -33,31 +33,12 @@
 
 /* magdalene */
 .magdalene {
-    width: 100%;
-    display: flex;
+    @extend .caprisongs;
+
     flex-direction: row-reverse;
 
-    img {
-        width: 50%;
-        height: 50%;
-    }
-
-    div {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: #E08155;
-    }
-
-    a {
-        width: 100%;
-        font-size: 20px;
-    }
-
-    h1 {
-        font-size: 50px;
+    div{
+        color: #E08155; 
     }
 
     div:hover {
@@ -71,29 +52,10 @@
 
 /* lp1 */
 .lp1 {
-    width: 100%;
-    display: flex;
+    @extend .caprisongs;
 
-    img {
-        width: 50%;
-        height: 50%;
-    }
-
-    div {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    div{
         color: #AF2E47;
-    }
-
-    a {
-        font-size: 20px;
-    }
-
-    h1 {
-        font-size: 50px;
     }
 
     div:hover {
@@ -105,30 +67,12 @@
 
 /* m3ll155x */
 .m3ll155x {
-    width: 100%;
-    display: flex;
+    @extend .caprisongs;
+
     flex-direction: row-reverse;
 
-    img {
-        width: 50%;
-        height: 50%;
-    }
-
-    div {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    div{
         color: #E1CCB9;
-    }
-
-    a {
-        font-size: 20px;
-    }
-
-    h1 {
-        font-size: 50px;
     }
 
     div:hover {
@@ -140,29 +84,10 @@
 
 /* ep2 */
 .ep2 {
-    width: 100%;
-    display: flex;
+    @extend .caprisongs;
 
-    img {
-        width: 50%;
-        height: 50%;
-    }
-
-    div {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    div{
         color: #FCFBFC;
-    }
-
-    a {
-        font-size: 20px;
-    }
-
-    h1 {
-        font-size: 50px;
     }
 
     div:hover {
@@ -175,30 +100,11 @@
 
 /* ep1 */
 .ep1 {
-    width: 100%;
-    display: flex;
+    @extend .caprisongs;
+
     flex-direction: row-reverse;
-
-    img {
-        width: 50%;
-        height: 50%;
-    }
-
-    div {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    div{
         color: #E5E1D6;
-    }
-
-    a {
-        font-size: 20px;
-    }
-
-    h1 {
-        font-size: 50px;
     }
 
     div:hover {
@@ -244,124 +150,28 @@
         }
     }
 
-    .caprisongs img {
-        width: 100%;
-        height: 100%;
-
-        a {
-            font-size: 30px;
-        }
-        h1 {
-            font-size: 40px;
-        }
-        div {
-            width: 100%;
-            height: 100vw;
-        }
-    }
-
     /* magdalene */
     .magdalene {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        img {
-            width: 100%;
-            height: 100%;
-        }
-        a {
-            font-size: 30px;
-        }
-        h1 {
-            font-size: 40px;
-        }
-        div {
-            width: 100%;
-            height: 100vw;
-        }
+        @extend .caprisongs;
     }
 
     /* lp1 */
     .lp1 {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        img {
-            width: 100%;
-            height: 100%;
-        }
-        a {
-            font-size: 30px;
-        }
-        h1 {
-            font-size: 40px;
-        }
-        div {
-            width: 100%;
-            height: 100vw;
-        }
+        @extend .caprisongs;
     }
 
     /* m3ll155x */
     .m3ll155x {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        img {
-            width: 100%;
-            height: 100%;
-        }
-        a {
-            font-size: 30px;
-        }
-        h1 {
-            font-size: 40px;
-        }
-        div {
-            width: 100%;
-            height: 100vw;
-        } 
+        @extend .caprisongs;
     }
 
     /* ep2 */
     .ep2 {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        img {
-            width: 100%;
-            height: 100%;
-        }
-        a {
-            font-size: 30px;
-        }
-        h1 {
-            font-size: 40px;
-        }
-        div {
-            width: 100%;
-            height: 100vw;
-        }
+        @extend .caprisongs;
     }
 
     /* ep1 */
     .ep1 {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        img {
-            width: 100%;
-            height: 100%;
-        }
-        a {
-            font-size: 30px;
-        }
-        h1 {
-            font-size: 40px;
-        }
-        div {
-            width: 100%;
-            height: 100vw;
-        }    
+        @extend .caprisongs;   
     }
 }
