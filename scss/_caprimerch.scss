@@ -1,4 +1,18 @@
 /* Estilo pagina caprimerch */
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
 .caprimerch {
     width: 100%;
     display: grid;
@@ -25,20 +39,14 @@
 
 .products {
     grid-area: ele2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex-column-center
 }
 
     /* Estilo mobile caprimerch */
 @media screen and (max-width: 1024px) {
     .caprimerch {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex-column-center;
     }
 
     .caprimerch p {
