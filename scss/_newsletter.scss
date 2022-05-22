@@ -18,11 +18,11 @@
     @include flex-row-center;
 }
 
-.form {
-    display: block;
-    text-align: left;
-    width: 50%;
+form{
+    @include flex-column-center;
+    width: 100%;
     margin: 0;
+    width: 50vw;
 }
 
 .videoNewsletter {
@@ -37,7 +37,7 @@
 }
 
 input{
-    width: 100%;
+    width: 80%;
     margin-top: 16px;
     background-color: black;
     border: 3px solid $main-color;
@@ -56,10 +56,9 @@ input{
         margin-top: 32px;
         margin-bottom: 32px;
         display: block;
-        margin: 0 auto;
     }
-    width: 85%;
-    text-align: left;
+    width: 80%;
+    // text-align: left;
     margin-top: 16px;
     margin-bottom: 16px;
 }
@@ -69,9 +68,10 @@ input{
 }
 
 .newsletter-button{
+    width: 100%;
     color: $main-color;
     background-color: black;
-    border:$main-color;
+    // border:$main-color;
     margin-top: 20px;
 }
 
@@ -90,18 +90,17 @@ input{
     }
 
     .form {
-        form{
-            width: 100%;
-        }
-        .selector{
-            width: 75%;
-        }
         position: absolute;
         top: 0%;
         left: 0%;
         width: 100%;
         height: 100%;
         @include flex-column-center;
+
+        .selector{
+            width: 100%;
+        }
+    
         button{
             background-color: rgba($color: #000000, $alpha: 0);
             margin-top: 20px;
@@ -109,6 +108,7 @@ input{
     }
     
     input{
+        width: 100%;
         margin-top: 16px;
     }
 }
