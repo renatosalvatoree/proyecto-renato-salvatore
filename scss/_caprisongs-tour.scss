@@ -17,6 +17,12 @@
   margin-top: 32px;
 }
 
+table{
+  a:hover{
+    text-decoration: underline $main-color;
+  }
+}
+
 .capritour {
   @include flex-column-center;
   width: 100%;
@@ -25,6 +31,8 @@
 .capritourBackground {
   width: 80%;
 }
+
+/* Estilo mobile pequeño caprisongs-tour */
 
 @media screen and (max-width: 500px) {
   .logo {

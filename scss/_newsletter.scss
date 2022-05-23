@@ -15,14 +15,17 @@
 
 .newsletter {
     font-size: 30px;
-    @include flex-row-center;
+    display: flex;
+    flex-direction: row;
+    align-items: center
 }
 
-form{
+.form{
+    form{
+        width: 100%
+    }
     @include flex-column-center;
-    width: 100%;
-    margin: 0;
-    width: 50vw;
+    width: 50%;
 }
 
 .videoNewsletter {
@@ -35,7 +38,9 @@ form{
         width: 300px;
     }
 }
-
+.entrada{
+    width: 50vw;
+}
 input{
     width: 80%;
     margin-top: 16px;
@@ -98,9 +103,15 @@ input{
         @include flex-column-center;
 
         .selector{
+            select{
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            width: 80%;
+        }
+        .entrada{
             width: 100%;
         }
-    
         button{
             background-color: rgba($color: #000000, $alpha: 0);
             margin-top: 20px;
@@ -108,10 +119,12 @@ input{
     }
     
     input{
-        width: 100%;
+        width: 80%;
         margin-top: 16px;
     }
 }
+
+/* Estilo mobile pequeño newsletter */
 
 @media screen and (max-width: 500px) {
     .logo {
@@ -120,6 +133,22 @@ input{
             margin-top: 32px;
             width: 60%;
         }
+    }
+.entrada{
+    width: 100%;
+}
+    .newsletter{
+        font-size: 15px;
+    }
+
+    .selector{
+        select{
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        width: 80%;
+        margin-top: 16px;
+        margin-bottom: 16px;
     }
 }
 

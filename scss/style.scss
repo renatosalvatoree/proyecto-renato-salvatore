@@ -33,6 +33,7 @@
 }
 
 body {
+    overflow-x: hidden;
     font-family: "Helvetica-custom";
     text-align: center;
     color: $main-color;
@@ -46,6 +47,12 @@ a {
 
 a:hover {
     color: $main-color;
+}
+
+.discography{
+    a:hover{
+        color: white; 
+    }
 }
 
 header {
