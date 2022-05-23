@@ -25,3 +25,13 @@
 .capritourBackground {
   width: 80%;
 }
+
+@media screen and (max-width: 500px) {
+  .logo {
+      width: 100%;
+      img {
+          margin-top: 32px;
+          width: 60%;
+      }
+  }
+}
